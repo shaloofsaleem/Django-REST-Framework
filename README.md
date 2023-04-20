@@ -31,11 +31,272 @@ See also
 
 > **NOTE**: **WAIT** until first CI run on github actions before cloning your new project.
 
-### What is included on this template?
+### Basic Django Reference
 
-- 🖼️ Templates for starting multiple application types:
-  * **Basic low dependency** Python program (default) [use this template](https://github.com/rochacbruno/python-project-template/generate)
-  * **Flask** with database, admin interface, restapi and authentication [use this template](https://github.com/rochacbruno/flask-project-template/generate).
+- This is a sample for Django and Rest API Project .
+To get this project up and running you should start by having Python installed on your computer. It's advised you create a virtual environment to store your projects dependencies separately. You can install virtualenv with
+
+# Step 1- Create a virtual environment
+
+[![codecov](https://codecov.io/gh/author_name/project_urlname/branch/main/graph/badge.svg?token=project_urlname_token_here)](https://codecov.io/gh/author_name/project_urlname)
+[![CI](https://github.com/author_name/project_urlname/actions/workflows/main.yml/badge.svg)](https://github.com/author_name/project_urlname/actions/workflows/main.yml)
+
+project_description
+
+## Install it from PyPI
+
+```bash
+pip install virtualenv
+```
+In Django, virtualenv is a tool used to create an isolated Python environment for a project. It allows developers to create a self-contained environment that does not interfere with other Python installations on the system.
+ 
+```
+virtualenv venv
+```
+
+That will create a new folder `env` in your project directory. Next activate it with this command on mac/linux:
+
+```
+source venv/bin/active
+```
+#### Step 1- Install the Library
+```
+pip install Django
+```
+#### Step 1- Create Django Project
+```
+django-adm
+#### Step 1- Create Django application
+```
+$ python manage.py startapp <Name>
+```
+Then install the project dependencies with
+
+```
+pip install -r requirements.txt
+```
+
+Apply migrations and create your database
+```
+python manage.py migrate
+```
+Create a user with manage.py
+```
+python manage.py createsuperuser
+```
+
+Now you can run the project with this command
+
+```
+python manage.py runserver
+```
+### Step 2- What API
+```
+```
+API is Application Programing Interface. 
+* API is Middle Man eg: Real Type Example
+   -{
+  Project A(Fronded)->-API-<-Project B(Backend)
+  (examples:Project A is Client ,API is waiter 
+  Project B is Server API is Kitchen)
+  -Client say to waiter bring soop And Waiter Go to Kitchen and Bring back to Client
+
+
+}
+### Step 2.1- What Types of API
+*Private 
+*Partner
+*Public
+#### Prvate API
+With in Organization 
+Django Rest Framework is Our Backend and sql we Can connect to  the difrent frontend application 
+Here Backend is Same but Frontend is different (Deckstop,IOS,Android,...)
+API Connection of backend to different frontend application with the help of JSON and XML
+Cuntly We using JSON
+#### Partner API
+Business
+eg: Prime video  <> MVD only for business
+uber <> GoogleMap
+
+#### Public API
+ parts Developer 
+Open Whether we can use 
+
+### JSON
+
+Backend -> Response Form JSON
+Frontend -> Request Form JSON
+ Client given Request  to Backend serch give the response to client 
+
+ JSON is Common Language to use for request and response
+
+### Basics Of URL
+slash with url
+common url is base url
+### Rest API
+Rest API is Architecture.
+End Point
+Method
+Header
+Data or Body
+
+#### End Point
+url end adress 
+
+#### Request HTTP Method
+
+CRUD 
+-Create > POST request
+- Read > GET request
+- Update > PUT / PATCH request
+- Delete > DELETE request
+
+Understanding URL
+https://www.imdb.com/title/tt15354916/ - individual
+intivitual - GET, PUT, PATCH,DELETE
+
+https://www.imdb.com/title/ - list 
+GET POST
+
+#### Headers
+Status Code
+
+#### Data
+using JSON/XML
+
+API + REST Architecture -------------> REST API 
+
+
+
+
+<br>
+in createproject '<Name>'
+```
+Django is a popular web framework for building web applications using the Python programming language. It provides a collection of tools and libraries that make it easier to develop web applications by handling many of the low-level details of web development, such as URL routing, database connectivity, and user authentication. Django follows a "batteries included" philosophy, which means that it comes with many built-in features that are commonly used in web development, so you don't have to reinvent the wheel every time you start a new project. In summary, Django is a powerful and efficient tool for building web applications quickly and easily.
+
+#### Step 1- Create Django application
+```
+$ python manage.py startapp <Name>
+```
+Then install the project dependencies with
+
+```
+pip install -r requirements.txt
+```
+
+Apply migrations and create your database
+```
+python manage.py migrate
+```
+Create a user with manage.py
+```
+python manage.py createsuperuser
+```
+
+Now you can run the project with this command
+
+```
+python manage.py runserver
+```
+### Step 2- What API
+```
+```
+API is Application Programing Interface. 
+* API is Middle Man eg: Real Type Example{
+  Project A(Fronded)->-API-<-Project B(Backend)
+  (examples:Project A is Client ,API is waiter 
+  Project B is Server API is Kitchen)
+  Client say to waiter bring soop And Waiter Go to Kitchen and Bring back to Client
+
+
+}
+### Step 2.1- What Types of API
+Private 
+Partner
+Public
+#### Prvate API
+With in Organization 
+Django Rest Framework is Our Backend and sql we Can connect to  the difrent frontend application 
+Here Backend is Same but Frontend is different (Deckstop,IOS,Android,...)
+API Connection of backend to different frontend application with the help of JSON and XML
+Cuntly We using JSON
+#### Partner API
+Business
+eg: Prime video  <> MVD only for business
+uber <> GoogleMap
+
+#### Public API
+ parts Developer 
+Open Whether we can use 
+
+### JSON
+
+Backend -> Response Form JSON
+Frontend -> Request Form JSON
+ Client given Request  to Backend serch give the response to client 
+
+ JSON is Common Language to use for request and response
+
+### Basics Of URL
+slash with url
+common url is base url
+### Rest API
+Rest API is Architecture.
+End Point
+Method
+Header
+Data or Body
+
+#### End Point
+url end adress 
+
+#### Request HTTP Method
+
+CRUD is -Create > POST request
+- Read > GET request
+- Update > PUT / PATCH request
+- Delete > DELETE request
+
+Understanding URL
+https://www.imdb.com/title/tt15354916/ - individual
+intivitual - GET, PUT, PATCH,DELETE
+
+https://www.imdb.com/title/ - list 
+GET POST
+
+#### Headers
+Status Code
+
+#### Data
+using JSON/XML
+
+API + REST Architecture -------------> REST API 
+
+
+
+
+<br>
+
+## Usage
+
+```py
+from project_name import BaseClass
+from project_name import base_function
+
+BaseClass().base_method()
+base_function()
+```
+
+```bash
+$ python -m project_name
+#or
+$ project_name
+```
+
+## Development
+
+Read the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+
   **or Run `make init` after cloning to generate a new project based on a template.**
 - 📦 A basic [setup.py](setup.py) file to provide installation, packaging and distribution for your project.  
   Template uses setuptools because it's the de-facto standard for Python packages, you can run `make switch-to-poetry` later if you want.
