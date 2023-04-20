@@ -101,8 +101,6 @@ Now you can run the project with this command
 python manage.py runserver
 ```
 ### Step 2- What API
-```
-```
 API is Application Programing Interface. 
 * API is Middle Man eg: Real Type Example{
   Project A(Fronded)->-API-<-Project B(Backend)
@@ -117,19 +115,19 @@ Private
 Partner
 Public
 #### Prvate API
-With in Organization 
-Django Rest Framework is Our Backend and sql we Can connect to  the difrent frontend application 
+-With in Organization 
+* Django Rest Framework is Our Backend and sql we Can connect to  the difrent frontend application 
 Here Backend is Same but Frontend is different (Deckstop,IOS,Android,...)
-API Connection of backend to different frontend application with the help of JSON and XML
-Cuntly We using JSON
+-API Connection of backend to different frontend application with the help of JSON and XML
+* Cuntly We using JSON
 #### Partner API
-Business
+-Business
 eg: Prime video  <> MVD only for business
 uber <> GoogleMap
 
 #### Public API
- parts Developer 
-Open Whether we can use 
+- 3rd-parts Developer 
+* Open Whether we can use 
 
 ### JSON
 
@@ -154,16 +152,17 @@ url end adress
 
 #### Request HTTP Method
 
-CRUD is -Create > POST request
+#### CRUD is 
+-Create > POST request
 - Read > GET request
 - Update > PUT / PATCH request
 - Delete > DELETE request
 
-Understanding URL
-https://www.imdb.com/title/tt15354916/ - individual
+*Understanding URL
+- https://www.imdb.com/title/tt15354916/ - individual
 intivitual - GET, PUT, PATCH,DELETE
 
-https://www.imdb.com/title/ - list 
+ - https://www.imdb.com/title/ - list 
 GET POST
 
 #### Headers
@@ -172,7 +171,7 @@ Status Code
 #### Data
 using JSON/XML
 
-API + REST Architecture -------------> REST API 
+# API + REST Architecture -------------> REST API 
 
 
 
