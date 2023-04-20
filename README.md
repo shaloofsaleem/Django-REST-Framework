@@ -1,7 +1,7 @@
 
-# Python Project Template
+# Django-REST-Framework
 
-A low dependency and really simple to start project template for Python Projects.
+The popular and widely used industry-standard data interchange formats, REST API. It is the most used technique for data exchange. We will explain how to create REST APIs in Python using Django. Before diving deep into this topic, let's understand the concept of REST and how it is different from the conventional formats. Understanding REST will help to get into it in a better way. Let's have a brief introduction to the REST API.
 
 See also 
 - [Flask-Project-Template](https://github.com/rochacbruno/flask-project-template/) for a full feature Flask project including database, API, admin interface, etc.
