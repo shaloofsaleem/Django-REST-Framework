@@ -92,7 +92,6 @@ python manage.py runserver
 ```
 ### Step 2- What API
 ```
-```
 API is Application Programing Interface. 
 * API is Middle Man eg: Real Type Example
    -{
