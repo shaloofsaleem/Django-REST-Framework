@@ -167,4 +167,44 @@ using JSON/XML
 
 <br>
 
+## Create Manual JSON
+
+### Models.py
+```py
+# Create your models here.
+
+class Movie(models.Model):
+    name = models.CharField(max_length=223)
+    description = models.TextField(max_length=225)
+    is_active = models.BooleanField(default=True)
+    
+    def __str__(self) -> str:
+        return self.name
 ```
+### View.py
+```bash
+from django.shortcuts import render
+from .models import *
+from django.http import JsonResponse
+
+def movie_list(request):
+    movie = Movie.objects.all()
+    data = {
+        'movies' :list(movie.values())
+        }
+    return JsonResponse(data)
+
+def movie_detail(request, pk):
+    movie_detail = Movie.objects.get(pk=pk)
+    data ={
+        'name' : movie_detail.name,
+        'description' : movie_detail.description ,
+        'is_active' : movie_detail.is_active
+    }
+    return JsonResponse (data)    
+```
+
+### urls.py
+
+Read the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+
