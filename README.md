@@ -206,5 +206,23 @@ def movie_detail(request, pk):
 
 ### urls.py
 
+### Serialization
+* Model Objects (serializer) ----------->Python Dictionary ---------> JSON Data(Rendering data)
+### DeSerialization(user)
+* JSON Data ------------->python Dictionary --------->(deserializer) Complex Datatype
+
+Type of Serialzers
+1. serializers.serializer
+2. serializers.Modelserializer
+ Types of views
+ 1. class based views
+ 2. function base views
+ 
+ Working With API
+ 1. Browser
+ 2. Postman
+
+
+
 Read the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
